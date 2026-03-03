@@ -19,7 +19,7 @@ const express = require('express');
 const cors = require('cors'); // importing cors package 
 const app = express();
 // we are creating our server
-app.use(cors()); // .use() means apply this setting to every request
+app.use(cors({ origin: "*" }));// .use() means apply this setting to every request
 app.use(express.json());
 // Rate limiter configuration
 const scanLimiter = rateLimit({
@@ -36,7 +36,7 @@ app.get("/", (req, res) => {
 });
 // this creates a route 
 app.use("/api",scanLimiter,scanRoutes);
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
 });
