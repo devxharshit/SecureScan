@@ -33,7 +33,7 @@ export default function App() {
 
     try {
       const response = await axios.post<ScanResult>(
-        "http://localhost:5000/api/scan",
+        "https://securescan-20a8.onrender.com/api/scan",
         { url }
       );
 
