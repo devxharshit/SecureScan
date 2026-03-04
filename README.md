@@ -25,13 +25,3 @@ Deployment: Vercel + Render
 
 ### Scan Results
 ![Results](screenshots/result.png)
-
-## Screenshots
-
-<p align="center">
-  <img src="screenshots/home.png" width="800"/>
-</p>
-
-<p align="center">
-  <img src="screenshots/result.png" width="800"/>
-</p>
