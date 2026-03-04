@@ -1,30 +1,37 @@
 # SecureScan
 
-SecureScan is a lightweight web vulnerability scanner built using Node.js and Express.
+SecureScan is a web vulnerability scanner that analyzes websites for security misconfigurations.
+
+## Live Demo
+https://secure-scan-kappa.vercel.app
 
 ## Features
-- HTTPS detection
 - Security header analysis
+- Risk scoring system
 - Information leakage detection
 - SSRF protection
-- DNS resolution validation
+- Scan history
+- Downloadable scan report
 
 ## Tech Stack
-- Node.js
-- Express
-- Axios
-- DNS module
+Frontend: React + Tailwind + Framer Motion  
+Backend: Node.js + Express + Axios  
+Deployment: Vercel + Render
 
-## How to Run
+## Screenshots
 
-npm install
-node server.js
+### Home Page
+![Home](screenshots/home.png)
 
-## API Endpoint
+### Scan Results
+![Results](screenshots/result.png)
 
-POST /api/scan
+## Screenshots
 
-Body:
-{
-  "url": "https://example.com"
-}
+<p align="center">
+  <img src="screenshots/home.png" width="800"/>
+</p>
+
+<p align="center">
+  <img src="screenshots/result.png" width="800"/>
+</p>
